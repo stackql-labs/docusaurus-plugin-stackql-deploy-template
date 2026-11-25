@@ -1,0 +1,62 @@
+{
+  "name": "@stackql/docusaurus-plugin-stackql-deploy-template",
+  "version": "0.1.0",
+  "description": "A stackql-deploy template menu for StackQL provider resource pages in Docusaurus: builds a .iql resource template from the page's SQL examples and places it in the breadcrumb row beside the Ask AI button.",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./template": "./src/template.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/icons-material": "^5.0.0 || ^6.0.0 || ^7.0.0",
+    "@mui/material": "^5.0.0 || ^6.0.0 || ^7.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "uuid": "^11.1.1",
+    "@docusaurus/core": {
+      "tinypool": "2.1.2"
+    },
+    "postcss-selector-parser": "7.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackql-labs/docusaurus-plugin-stackql-deploy-template"
+  },
+  "keywords": [
+    "docusaurus",
+    "stackql",
+    "stackql-deploy",
+    "infrastructure-as-code",
+    "plugin"
+  ],
+  "author": "Jeffrey Aven @ StackQL Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stackql-labs/docusaurus-plugin-stackql-deploy-template/issues"
+  },
+  "homepage": "https://github.com/stackql-labs/docusaurus-plugin-stackql-deploy-template#readme",
+  "engines": {
+    "node": ">=18.0"
+  },
+  "allowScripts": {
+    "core-js": false
+  }
+}

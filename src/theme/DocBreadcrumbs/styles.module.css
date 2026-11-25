@@ -1,0 +1,29 @@
+/*
+ * The row of @stackql/docusaurus-plugin-aeo (breadcrumbs left, actions
+ * right), with the actions grouped so the Ask AI button and the template
+ * menu sit together at the right edge of the content column.
+ */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/*
+ * margin-left: auto keeps the actions right-aligned when the page has no
+ * breadcrumbs (the theme renders none) or when the row wraps.
+ */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+/* No empty flex item when neither action renders (no Ask AI button on a page that is not a resource page). */
+.actions:empty {
+  display: none;
+}

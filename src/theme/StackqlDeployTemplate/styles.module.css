@@ -1,0 +1,23 @@
+/*
+ * Hidden below the Docusaurus desktop breakpoint (997px): a downloaded .iql
+ * file is of little use on a phone or tablet. The Ask AI button of
+ * @stackql/docusaurus-plugin-aeo uses the same breakpoint.
+ */
+.wrapper {
+  display: none;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* showOnMobile: true */
+.wrapperAllViewports {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
